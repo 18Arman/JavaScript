@@ -7,3 +7,4 @@ City='Kapurthala'
 let mail
 console.log("Printing Customer Details")
 console.table([CustomerID,CustomerName,CustomerYear,Age,City,mail])
+/*preferable not to use var, use let instead because of block scope and functional scope */
