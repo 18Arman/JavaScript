@@ -1,13 +1,10 @@
 /*
 summay:
-primitive and non-primitive datatypes on the basis of storation and access of data
+   primitive and non-primitive datatypes on the basis of storation and access of data
    primitive(call by value): 7 categories:String,Number,Boolean,null,undefined
                             ,Symbol(uniquefication of a value),BigInt
-  
    Non-primitive(call by reference): //data type object hota hai function ka functional object hai
         Arrays,Objects,Functions
-
-
 
 ques: java is statically typed or dynamically types?
 sol:
@@ -26,9 +23,11 @@ JavaScript is a dynamically typed language. This means that you don't need to
 
 // const bignumber=133531234324n //to mark them as bigInt we write n at last
 
+//array
 // let samples=[2,4,12,'qerqwer',123423n,Symbol(3),[3,2]]
 // console.log(samples)
 // console.log(samples[4])
+//Object example, it is basically a key-value pair where key is string and value can be any datatype
 // let Dictionary={
 //     A:"arman",
 //     B:"Ball"
@@ -79,7 +78,7 @@ Reference/Non primitive data types -> call by reference ( array,object, function
 //     mail:"xyz@gmail.com",
 //     upi:"123&ybl"
 // }
-// let user2=user1
+// let user2=user1//because this user1 is an reference to that object
 // user2.mail="arman@gmail.com"// it will be updated on both side
 // console.log(user1.mail);
 // console.log(user2.mail);

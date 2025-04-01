@@ -2,6 +2,8 @@ console.log("Hello,Arman")
 const CustomerID="12206043"
 var CustomerName="Arman"
 let CustomerYear="3rd"
+let cus_name='3rd'
+console.log(cus_name);
 let Age=20
 City='Kapurthala'
 let mail
