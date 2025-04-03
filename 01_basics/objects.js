@@ -70,3 +70,18 @@ console.log(arr2);
 //check whether user has a key or not
 console.log(user.hasOwnProperty("name"));
 
+//Object class-3
+//destructuring the objects
+//first thing we can rename the object inside keys when we are actually using name like this:
+const {name:n}=user;//like here I have writed name of user object as n or if we don't write n then we can normally use name also
+console.log(n);
+
+//Api's 
+//old format: XML file
+//new format: JSON type(JavaScipt Object notation)
+// formal of json
+// {
+//     name: "arman"
+//     age: "20"
+// }
+//like this but it can also be array or objects anything just we need to study that thing
