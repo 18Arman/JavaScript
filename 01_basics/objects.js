@@ -1,10 +1,10 @@
 //two type of objects, Singleton, literal
 // Singleton: these are those which are created using constructors
-// eg: Object.create
+// eg: const ob1=new Object();
 // literal: these are using the normal method 
 // const user={};
 
-const mysym=Symbol("yoursymbol");
+const mysym=Symbol("yoursymbol");//we will see how to use an external symbol through object and also print it:>
 const user={
     name:"Arman",
     Age:"20",
@@ -50,7 +50,7 @@ console.log(new_user.name.fullname.username);
 //method 1
 let ob3=Object.assign({},new_user,user);
 console.log(ob3);
-//method2
+//method2, using spread
 ob3={...user,...new_user}
 console.log(ob3);
 
@@ -72,7 +72,7 @@ console.log(user.hasOwnProperty("name"));
 
 //Object class-3
 //destructuring the objects
-//first thing we can rename the object inside keys when we are actually using name like this:
+//first thing we can rename the keys of objects when we are actually using names of keys often, like this:
 const {name:n}=user;//like here I have writed name of user object as n or if we don't write n then we can normally use name also
 console.log(n);
 
