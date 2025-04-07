@@ -42,3 +42,82 @@ fun3([2,4,"a"]);
 // In javascript there is a flaw that we need to check whether the parameter datatype as we are expecting exists or not, so
 //everytime we should apply check in function to validate the datatype and value existance otherwise there will be a flaw in 
 //code
+
+
+//lecture 21
+// DOM( document object modal ): means it helps in manipulating html page using JS
+
+//Technique to declare function
+
+// //method 1
+// const fun1=function(){
+
+// }
+// //method 2
+// function fun(){
+
+// }
+
+//difference is we can call method 1 function only after it's declaration. but method 2 function can be called before and after 
+//it's declaration in code
+
+//lecture 23 (This & => function)
+
+//this is used to represent the current context
+
+// in node environment if you use this in console.log then it will give empty object while in browser it will give a window object
+//which contains a lot of web page manipulation things like chicking , submitting forms, etc
+
+// if we are using this inside function then also it willnot work properly like console.log(this) inside function will give a lot of
+//details relative to function and if we print any member of function using this then it will give undefined because this is not 
+//for function
+const ob1={
+    name: "arman"
+    ,age:20,
+    ident:function(){
+        value:29;
+        console.log(this)
+    }
+} 
+ob1.ident()
+
+//ARROW FUNCTION, short form of function
+const fun=()=>{
+    console.log("this is arrow function")
+    return "Hello";
+}
+const funn=()=> ("hello");//this will return this, write the returning part in bracket it will be good practice when
+// we will be shift to other language similar to js
+const funnn=()=>({name:"Amrna"});//that's how object will be passed in arrow function
+
+// //syntax for using for each loop with function,(Three methods)
+// arr.forEach(function () {}){
+
+// }
+// arr.forEach(()=>{}){
+
+// }
+// arr.forEach(()=>()){
+
+// }
+
+//Immediately Invoked function Execution[IIFE]
+// Useful in:
+// ->When we want to execute a function immediately when the program starts(Note you have to declare them at starting of the code)
+// ->Prevent the function from getting polluted from global variables
+
+//Note: When we are declaring one IIFE and want more IIFE then we have to use semicolon in IIFE at the end, because IIFE 
+//know when to start but does'nt know when to end so semicolon is required
+
+//IIFE declaration methods
+(
+    function iife1(){
+        console.log("IIFE1");
+    }
+)();
+
+(
+    ()=>{
+        console.log("IIFE2");
+    }
+)();
