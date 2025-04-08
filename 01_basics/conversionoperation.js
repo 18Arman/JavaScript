@@ -21,10 +21,10 @@
 // console.log(1+2+"2")//see if first isn num then it is treating as num till string does'nt appear
 
 //trick2
-console.log(true)
-console.log(+true)
-console.log(-true)
-console.log(+"")
+// console.log(true)
+// console.log(+true)
+// console.log(-true)
+// console.log(+"")
 
 
 // let num1,num2
@@ -37,11 +37,11 @@ console.log(+"")
 //lec 8 Comparison
 //problem comes when data type is different in comparison
 //avoid these types of comparisons
-// console.log("1"<2);
-// console.log("01"<2);
-// console.log(null>0);
-// console.log(null==0);//the reason is that an equality check == and  comparisons >= <= > <works differently
-// console.log(null>=0);//comparisons converts null to 0 that's why here answer is true
+console.log("4"<2);//it is convertion string 4 to int 4 
+console.log("-1"<2);
+console.log(null<1);//converting null to 0 but not in == case
+console.log(null==0);//the reason is that an equality check == and  comparisons >= <= > <works differently
+console.log(null>=0);//comparisons converts null to 0 that's why here answer is true
 
 //undefined will always give false in any comparison
 // console.log(undefined>0);

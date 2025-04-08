@@ -12,8 +12,8 @@ num=Number(null)
 console.log(typeof num)
 console.log(num)
 num=Number(undefined)
-console.log(typeof num)
-console.log(num)
+console.log(typeof num)//type is number
+console.log(num)//NaN
 
 //case student for datatype to number
 // so string and undefined are giving Nan and type as number
