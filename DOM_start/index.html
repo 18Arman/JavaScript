@@ -1,1 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom Learning</title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color:white;
+        }
+    </style>
+</head> 
+<body  class="bg-black">
+    <div>
+        <h1 id="title" class="heading"> Dom learning on chai aur code </h1>
+        <p>Lorem ipsum dolor sit amet</p>
+    </div>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+</body>
+</html>
+<!-- 
+✅ 1. getElementById()
+Use: Selects an element by its ID.
+
+Returns: A single element (the first match).
+
+Syntax: document.getElementById("myId")
+
+Note: IDs should be unique on the page.
+
+html
+Copy code
+<div id="title">Hello</div>
+<script>
+  const el = document.getElementById("title");
+  console.log(el.textContent); // "Hello"
+</script>
+✅ 2. getElementsByClassName()
+Use: Selects all elements that have a specific class name.
+
+Returns: A live HTMLCollection (like an array, but not exactly).
+
+Syntax: document.getElementsByClassName("myClass")
+
+html
+Copy code
+<div class="box">Box 1</div>
+<div class="box">Box 2</div>
+<script>
+  const boxes = document.getElementsByClassName("box");
+  console.log(boxes[0].textContent); // "Box 1"
+</script>
+✅ 3. querySelector()
+Use: Selects the first element that matches a CSS selector.
+
+Returns: A single element.
+
+Syntax: document.querySelector("selector")
+
+Examples:
+
+js
+Copy code
+document.querySelector("#title")       // ID selector
+document.querySelector(".box")         // Class selector
+document.querySelector("div > p")      // Complex CSS selector
+✅ 4. querySelectorAll()
+Use: Selects all elements that match a CSS selector.
+
+Returns: A static NodeList (not live).
+
+Syntax: document.querySelectorAll("selector")
+
+html
+Copy code
+<p class="text">Para 1</p>
+<p class="text">Para 2</p>
+<script>
+  const texts = document.querySelectorAll(".text");
+  console.log(texts.length); // 2
+</script>
+🔁 Quick Comparison Table:
+Method	Selector Type	Returns	Live/Static
+getElementById()	ID (#id)	Single element	❌ Static
+getElementsByClassName()	Class (.class)	HTMLCollection	✅ Live
+querySelector()	CSS selector	First match only	❌ Static
+querySelectorAll()	CSS selector	NodeList (all matches)	❌ Static
+✅ Summary / Use When:
+Use getElementById() when you know the ID.
+
+Use getElementsByClassName() for a group of elements with the same class.
+
+Use querySelector() for complex or flexible selection (first match).
+
+Use querySelectorAll() when you need multiple elements using a CSS-like selector. -->
 
