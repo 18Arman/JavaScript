@@ -23,5 +23,6 @@ let state=null
 
 console.log(typeof "Arman")
 console.log(typeof 21)
+console.log(typeof(21));//can be written in both ways, like we studied in coursera course,calling of function may very
 console.log(typeof undefined)//it's type is undefined
 console.log(typeof null)//it's type is object

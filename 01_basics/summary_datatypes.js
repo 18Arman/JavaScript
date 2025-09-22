@@ -6,7 +6,7 @@ summay:
    Non-primitive(call by reference): //data type object hota hai function ka functional object hai
         Arrays,Objects,Functions
 
-ques: java is statically typed or dynamically types?
+ques: java is statically typed or dynamically typed?
 sol:
 JavaScript is a dynamically typed language. This means that you don't need to
  specify the data type of a variable when you declare it.

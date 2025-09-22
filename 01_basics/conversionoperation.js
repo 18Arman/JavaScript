@@ -1,4 +1,4 @@
-// Operation
+// ////Operation
 // let num=3
 // let neg_num=-num
 // console.log(num)
@@ -8,6 +8,7 @@
 // console.log(2**4)
 // console.log(2/2)
 // console.log(2%3)
+// console.log(2^4, "end");//xor operation
 
 //tricky chize
 // let s1="hello"
@@ -21,15 +22,16 @@
 // console.log(1+2+"2")//see if first isn num then it is treating as num till string does'nt appear
 
 //trick2
-// console.log(true)
-// console.log(+true)
-// console.log(-true)
-// console.log(+"")
+console.log(true)
+console.log(+true)
+console.log(-true)
+console.log(+"")
 
 
-// let num1,num2
-// num1=num2=2+2
-    
+let num1,num2
+num1=num2=2+2
+console.log(num1," ",num2);
+
 // let gamecounter=1;
 // gamecounter++;
 // console.log(gamecounter);

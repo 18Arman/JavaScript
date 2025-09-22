@@ -10,9 +10,9 @@
 // console.log(typeof myDate);//it is a Object
 
 // let my_created_date=new Date(2023, 0, 23);//month as mentioning starting from 0 index
-// let modified=new Date(2023, 0, 23,5,3);
+// let modified=new Date(2023, 0, 23,5,3,45);
 // console.log(my_created_date.toDateString());
-// console.log(modified);
+// console.log(modified.toLocaleString());
 // //our own format
 // let more_date=new Date("2023-01-23")//here will start from 1 index
 // console.log(more_date);
@@ -20,12 +20,12 @@
 // console.log(more2_date.toLocaleString());
 
 // let myTimeStamp=Date.now();
-// // console.log(myTimeStamp);//in mili seconds
-// // console.log(my_created_date.getTime());//in mili seconds
+// console.log(myTimeStamp);//in mili seconds
+// console.log(my_created_date.getTime());//in mili seconds
 //in mili
-console.log(Date.now());
+// console.log(Date.now());
 // //to get in seconds
-console.log(Math.floor(Date.now()/1000));//using math.floor to remove the decimals and divided by thousand to get output in seconds
+// console.log(Math.floor(Date.now()/1000));//using math.floor to remove the decimals and divided by thousand to get output in seconds
 // let new_date=new Date()
 // console.log(new_date);
 // console.log(new_date.getMonth())//will start from 0 index
