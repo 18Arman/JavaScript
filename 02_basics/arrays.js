@@ -9,11 +9,11 @@ arr1.shift();
 console.log(arr1);
 arr1.pop();
 console.log(arr1);
-const st=arr1.join("")
+const st=arr1.join()
 console.log(st);
 //slice
 console.log("A ",arr1);
-console.log(arr1.slice(1,3));
+console.log(arr1.slice(2));
 //splice
 console.log("B ",arr1);
 console.log(arr1.splice(1,3));
@@ -45,7 +45,7 @@ console.log(a8);
 const sp=Array.from({1:"arman"})
 console.log(sp);
 
-//to create an array from a set of elements
+//to create an array from a set of elements not arrays like no primitive structures
 let g1=2,g2=3,g4=5;
 const el_array=Array.of(g2,g1,g4);
 console.log(el_array);

@@ -1,10 +1,11 @@
-//two type of objects, Singleton, literal
+//two type of objects: Singleton and literal
 // Singleton: these are those which are created using constructors
 // eg: const ob1=new Object();
 // literal: these are using the normal method 
 // const user={};
 
-const mysym=Symbol("yoursymbol");//we will see how to use an external symbol through object and also print it:>
+const mysym=Symbol("yoursymbol");//we will see how to use an
+//  external symbol through object and also print it:
 const user={
     name:"Arman",
     Age:"20",
@@ -15,12 +16,15 @@ const user={
 console.log(user.name);
 console.log(user["name"]);
 console.log(user[mysym]);
+//can add 
 user.greetings=function(){
     console.log("Namaste!");
 }
 user.greetings2=function(){
     console.log(`Namaste Again!,${this.name}`)
 }
+
+
 
 //we can freeze or lock the change of key values of object
 Object.freeze(user);
@@ -30,6 +34,10 @@ console.log(user.name);
 //calling the functions
 user.greetings();
 user.greetings2();
+
+//practice homework: create an object and then perform symbol trick and also add 
+//function later on and use freeze also
+
 
 
 //Object class 2
@@ -46,6 +54,8 @@ const new_user={
     }
 }
 console.log(new_user.name.fullname.username);
+// console.log(new_user);
+
 //combining two objects
 //method 1
 let ob3=Object.assign({},new_user,user);
@@ -79,7 +89,7 @@ console.log(n);
 //Api's 
 //old format: XML file
 //new format: JSON type(JavaScipt Object notation)
-// formal of json
+// format of json
 // {
 //     name: "arman"
 //     age: "20"

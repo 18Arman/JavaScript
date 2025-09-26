@@ -4,10 +4,12 @@ function solve(){
     console.log("This is my first function");
 }
 solve();
+let ref=solve;// I am storing it's reference to other variable
+ref();
 //if I write solve only then this means it is a reference of function while solve() this means execution of function
 //if we print the output of such function which is not returning anything then it will give undefined
 console.log(solve());
-console.log(solve);
+console.log(solve);//this is reference
 
 // a function to find power of a number
 function power(a,b){
